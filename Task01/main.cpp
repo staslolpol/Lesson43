@@ -16,5 +16,11 @@ int main() {
 	print("Result array: \n");
 	print(convert(array, length));
 
+	int value = 0;
+
+	bool result = search_linear(array, length, value);
+
+	print(to_string(result));
+
 	return 0;
 }

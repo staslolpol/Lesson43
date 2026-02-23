@@ -16,11 +16,18 @@ int main() {
 	print("Result array: \n");
 	print(convert(array, length));
 
-	int value = 0;
+	int value = 17;
 
 	bool result = search_linear(array, length, value);
 
-	print(to_string(result));
+
+	print(result ? "Yes" : "No");
+
+	print("Index of first element - "
+		+ to_string(get_first_element(array, length, value)) + "\n");
+
+	print("Index of last element - "
+		+ to_string(get_last_element(array, length, value)) + "\n");
 
 	return 0;
 }

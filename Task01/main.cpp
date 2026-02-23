@@ -4,7 +4,7 @@ int main() {
 	int array[DEFAULT_SIZE];
 
 	int length;
-	int a = -20, b = 20;
+	int a = 0, b = 20;
 
 	do {
 		cout << "Input size of array: ";
@@ -29,5 +29,7 @@ int main() {
 	print("Index of last element - "
 		+ to_string(get_last_element(array, length, value)) + "\n");
 
+	print("Count elemen is "
+		+ to_string(count_element(array, length, value)) + "\n");
 	return 0;
 }
